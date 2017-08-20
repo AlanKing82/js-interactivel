@@ -1,0 +1,130 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+
+    <title>Memory Pair Matching jQuery plug-in</title>
+    <meta name="Alan King" content="" charset="utf-8">
+    <link rel="stylesheet" type="" href="css/memory-sort.css">
+    <link href="css/featherlight.min.css" rel="stylesheet" type="text/css" media="screen" />
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/featherlight.min.js" type="text/javascript"></script>
+    <script src="js/memory-sort.js"></script>
+        
+ 
+    
+</head>
+
+<body>
+
+    <div class="width100" id="whiteBoxWrap">
+        <div class="whiteBox">
+            <div class="boxContent">
+                <div class="t"></div>
+                <h1 class="width50">Safety signs and PPE</h1>
+                <p>Match the safety signs with the PPE required.</p>
+                <br />
+                <dl class="noteExpand expandShort" style="left: 420px; top: 15px; position: absolute;">
+                    <dd class="interact_img"></dd>
+                    <dt>Interact</dt>
+                    <dd>Click a question mark and a face to begin.</dd>
+                </dl>
+                <div class="memory-wrap">
+                    <ul class="countdown" id="progressbar">
+                        <li></li>
+                    </ul>
+                    <div class="memory-game">
+                        <div class="modalContent">
+                            <h1>Safety signs and PPE</h1>
+                            <p>Can you work out what PPE to wear from the safety signs? Take a look at the safety signs below
+                                and the corresponding PPE required. See if you can memorize which PPE matches each sign.
+                                When ready close the popup window to begin the activity. Try to match the top level with
+                                bottom level. You are allowed 5 incorrect selection&nbsp;attempts.</p>
+                            <div class="card">
+                                <div class="topContent">
+                                    <div class="front"><img alt="objects falling" src="assets/sign_objects_falling.png" /></div>
+                                </div>
+                                <div class="bottomContent">
+                                    <div class="front"><img alt="Hardhat" src="assets/sign04.png" /></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="topContent">
+                                    <div class="front"><img alt="Corrosion resistant gloves" src="assets/sign_corrosive.png" /></div>
+                                </div>
+                                <div class="bottomContent">
+                                    <div class="front"><img alt="corrosive" src="assets/sign03.png" /></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="topContent">
+                                    <div class="front"><img alt="slip" src="assets/sign_slip.png" /></div>
+                                </div>
+                                <div class="bottomContent">
+                                    <div class="front"><img alt="Slip resistant shoes" src="assets/sign01.png" /></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="topContent">
+                                    <div class="front"><img alt="respiratory" src="assets/sign_respiratory.png" /></div>
+                                </div>
+                                <div class="bottomContent">
+                                    <div class="front"><img alt="Respiratory protective equipment" src="assets/sign02.png" /></div>
+                                </div>
+                            </div>
+                            <!--
+<div class="card">
+<div class="topContent">
+<div class="front"><img alt="visibility" src="assets/sign_vis.png" /></div>
+</div>
+<div class="bottomContent">
+<div class="front"><img alt="High visibility jacket" src="assets/sign05.png" /></div>
+</div>
+</div>
+-->
+                            <div class="card">
+                                <div class="topContent">
+                                    <div class="front"><img alt="noise" src="assets/sign_noise.png" /></div>
+                                </div>
+                                <div class="bottomContent">
+                                    <div class="front"><img alt="Ear protection" src="assets/sign06.png" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notDisplay" id="tierImgs"><img alt="back" src="assets/sign_back.png" /> <img alt="back" src="assets/ppe_profile.png" /></div>
+                    <div class="inactive" id="modal">
+                        <div class="modalResult">
+                            <div class="inactive">
+                                <p><strong>Correct. </strong>Well done. Remember that&nbsp;the protection you need will depend
+                                    on your task - you might need more PPE than suggested here.&nbsp;Please continue.</p>
+                            </div>
+                            <div class="inactive">
+                                <p>Out of attempts. Close window to try again or continue to next screen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b">
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">// <![CDATA[
+var activity = 1;
+        
+        if ($) {
+      
+
+  
+            $(".card").memorySort({attemptLives: 5});
+        
+
+        }
+// ]]></script>
+</body>
+
+</html>
