@@ -7,7 +7,16 @@ Steps
 
 
 
+home
 
+
+
+eskillz
+fork
+
+pull request
+
+upstream
 
 
 http://blog.npmjs.org/post/112712169830/making-your-jquery-plugin-work-better-with-npm
