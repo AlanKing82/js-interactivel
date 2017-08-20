@@ -8,14 +8,12 @@ Steps
 
 
 home
-
+accept pull request to proper branch
+merge - commit
 
 
 eskillz
-fork
-
-pull request
-
+fork - changes - pull request
 upstream
 
 
